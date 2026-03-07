@@ -1,7 +1,39 @@
+/* Configuração geral da página */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 40px;
+    line-height: 1.6;
+}
+
+/* Centraliza todos os títulos */
+h1, h2, h6{
+    text-align: center;
+}
+
+/* Estilização dos parágrafos */
+p{
+    text-align: justify;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+/* Container das imagens */
 .container{
     display: flex;
     justify-content: center;
+    gap: 30px; /* Espaço entre as imagens */
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
-body{
-    text-align: center;
+
+/* Imagens dentro do container */
+.container img{
+    border-radius: 8px;
+}
+
+/* Legendas das imagens */
+h6{
+    margin-top: 5px;
+    font-size: 14px;
+    color: #555;
 }
