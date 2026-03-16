@@ -1,0 +1,63 @@
+body{
+font-family: Arial;
+background:#f7d8a9;
+text-align:center;
+margin:0;
+}
+
+.container{
+display:flex;
+justify-content:center;
+margin-top:60px;
+}
+
+.card{
+width:500px;
+background:white;
+padding:30px;
+border-radius:10px;
+box-shadow:0px 0px 10px rgba(0,0,0,0.2);
+display:none;
+}
+
+/* título central */
+.card h2{
+text-align:center;
+}
+
+/* imagem central */
+.card img{
+display:block;
+margin:auto;
+margin-bottom:20px;
+}
+
+/* texto alinhado à esquerda */
+.card p{
+text-align:left;
+line-height:1.6;
+margin-bottom:15px;
+}
+
+#pessoa1{
+display:block;
+}
+
+.card:target{
+display:block;
+}
+
+body:has(.card:target) #pessoa1{
+display:none;
+}
+
+.botao{
+display:inline-block;
+margin-top:20px;
+padding:10px 20px;
+background:#4CAF50;
+color:white;
+text-decoration:none;
+border-radius:5px;
+margin-right:10px;
+}
